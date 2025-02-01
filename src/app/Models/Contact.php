@@ -46,21 +46,7 @@ class Contact extends Model
         }
     }
 
-    public function scopeTest1($query, $date)
-    {
-        if (!empty($date)) {
-            $query->where('updated_at', 'like',  $date . '%');
-        }
-    }
-
-    public function scopeTest2($query, $date)
-    {
-        if (!empty($date)) {
-            $query->where('updated_at', 'like',  $date . '%');
-        }
-    }
-
-    public function scopeTest3($query, $date)
+    public function scopeTest5($query, $date)
     {
         if (!empty($date)) {
             $query->where('updated_at', 'like',  $date . '%');
@@ -74,7 +60,21 @@ class Contact extends Model
         }
     }
 
-    public function scopeTest5($query, $date)
+    public function scopeTest3($query, $date)
+    {
+        if (!empty($date)) {
+            $query->where('updated_at', 'like',  $date . '%');
+        }
+    }
+
+    public function scopeTest2($query, $date)
+    {
+        if (!empty($date)) {
+            $query->where('updated_at', 'like',  $date . '%');
+        }
+    }
+
+    public function scopeTest1($query, $date)
     {
         if (!empty($date)) {
             $query->where('updated_at', 'like',  $date . '%');
