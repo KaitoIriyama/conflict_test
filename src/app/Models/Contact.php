@@ -46,4 +46,10 @@ class Contact extends Model
         }
     }
 
+    public function scopeTest($query, $date)
+    {
+        if (!empty($date)) {
+            $query->where('updated_at', 'like',  $date . '%');
+        }
+    }
 }
