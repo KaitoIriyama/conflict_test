@@ -1,0 +1,287 @@
+.header-button {
+    padding: 4px 20px;
+    color: #d9c6b5;
+    background-color: #f6f6f6;
+    border: solid 1px #d9c6b5;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1000px;
+}
+
+.container__heading {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 24px;
+    color: #82756a;
+}
+
+.container__content {
+    width: 100%;
+    padding: 20px 0;
+}
+
+/* 検索欄 *************************************/
+
+.admin-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__form {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search__text {
+    width: 30%;
+}
+
+.search__text input {
+    width: 100%;
+    padding: 8px 10px;
+    border: solid 1px #e3ded9;
+    color: #82756a;
+    background-color: #fbfbfb;
+}
+
+.search__gender select,
+.search__category select,
+.search__date input {
+    padding: 8px 30px 8px 10px;
+    border: solid 1px #e3ded9;
+    color: #82756a;
+    background-color: #f4f4f4;
+}
+
+.admin-search__button--submit {
+    width: 80px;
+    padding: 8px 0;
+    color: white;
+    background-color: #82756a;
+    border: none;
+    cursor: pointer;
+}
+
+.admin-search__button--reset {
+    width: 80px;
+    padding: 8px 0;
+    color: white;
+    background-color: #d9c6b5;
+    border: none;
+    cursor: pointer;
+}
+
+/* セレクトボックスの▼アイコンのカスタマイズ */
+.custom-icon {
+    position: relative;
+}
+
+.custom-icon::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 8px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 12px solid #e3ded9;
+    border-bottom: 0;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.custom-icon select {
+    appearance: none;
+}
+
+.custom-icon input::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+/* エクスポートボタン＆ページネーション **********/
+
+.admin-export {
+    padding: 40px 0 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.admin-export__button-submit {
+    padding: 6px 20px;
+    color: #82756a;
+    background-color: #edeae6;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* ページネーションのカスタマイズ */
+.admin-export__pagination ul {
+    margin: 0;
+    border: solid 1px #e0dfde;
+    border-radius: 5px;
+    display: flex;
+}
+
+.admin-export__pagination li {
+    padding: 5px 10px;
+}
+
+.admin-export__pagination a,
+.admin-export__pagination span {
+    text-decoration: none;
+    font-size: 14px;
+    color: #82756a;
+}
+
+.admin-export__pagination li:not(:last-child) {
+    border-right: solid 1px #e0dfde;
+}
+
+.admin-export__pagination .active {
+    background-color: #82756a;
+}
+
+.admin-export__pagination .active span {
+    color: white;
+}
+
+/* 問い合わせ内容一覧 **************************/
+
+.admin-table {
+    width: 100%;
+}
+
+.column-name {
+    width: 20%;
+    padding-left: 30px;
+}
+
+.column-gender {
+    width: 10%;
+}
+
+.column-mail {
+    width: 30%;
+}
+
+.column-category {
+    width: 25%;
+}
+
+.column-button {
+    width: 15%;
+    padding-right: 30px;
+    text-align: right;
+}
+
+.admin-table tr {
+    border: solid 1px #e0dfde;
+}
+
+.admin-table th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: left;
+    color: white;
+    background-color: #82756a;
+}
+
+.admin-table td {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: #82756a;
+}
+
+.admin-table__button {
+    padding: 4px 10px;
+    color: #d9c6b5;
+    background-color: #f6f6f6;
+    border: solid 1px #e3ded9;
+    font-size: 14px;
+    text-decoration: none;
+    cursor: pointer;
+    display: inline-block;
+}
+
+/* モーダルウィンドウ **************************/
+.modal {
+    padding: 100px 80px 40px 80px;
+    background-color: white;
+    border: solid 1px #82756a;
+    box-shadow: 2px 2px 5px #82756a;
+    display: inline-block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.modal:not(:target) {
+    display: none;
+}
+
+.modal:target {
+    display: inline-block;
+}
+
+.modal-table tr {
+    color: #82756a;
+}
+
+.modal-table th {
+    padding: 10px;
+    width: 35%;
+    text-align: left;
+}
+
+.modal-table td {
+    padding: 10px;
+    width: 65%;
+}
+
+.modal-form__button {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.modal-form__button-submit {
+    padding: 4px 10px;
+    color: white;
+    background-color: #ba370d;
+    border: none;
+}
+
+.modal-close {
+    width: 30px;
+    height: 30px;
+    border: solid 1px #82756a;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+
+.modal-close__button {
+    text-decoration: none;
+    color: #82756a;
+}

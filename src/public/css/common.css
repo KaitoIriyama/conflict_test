@@ -1,0 +1,28 @@
+.header {
+    border-bottom: solid 2px #f7f7f7;
+    background-color: white;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    max-width: 1230px;
+    position: relative;
+}
+
+.header__logo--outer {
+    text-align: center;
+}
+
+.header__logo {
+    color: #8b7969;
+    text-decoration: none;
+    font-size: 24px;
+}
+
+.header__button--outer {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+}
