@@ -102,7 +102,7 @@ class Contact extends Model
     public function scopeSample1($query, $date)
     {
         if (!empty($date)) {
-            $query->where('created_at',  $date);
+            $query->where('updated_at', 'like',  $date . '%');
         }
     }
 }
